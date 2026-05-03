@@ -1,92 +1,112 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { Briefcase, Code, User, Database } from "lucide-react";
 
 export const AboutSection = () => {
   return (
     <section id="about" className="py-24 px-4 relative">
-      {" "}
       <div className="container mx-auto max-w-5xl">
+
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          About <span className="text-primary"> Me</span>
+          About <span className="text-primary">Me</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+          {/* LEFT CONTENT */}
           <div className="space-y-6">
+
             <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Tech Creator
+              Aspiring AI & Software Engineer
             </h3>
 
             <p className="text-muted-foreground">
-              With over 5 years of experience in web development, I specialize
-              in creating responsive, accessible, and performant web
-              applications using modern technologies.
+              Final-year Computer Science student passionate about building real-world
+              solutions using AI, software development, and IoT technologies.
             </p>
 
             <p className="text-muted-foreground">
-              I'm passionate about creating elegant solutions to complex
-              problems, and I'm constantly learning new technologies and
-              techniques to stay at the forefront of the ever-evolving web
-              landscape.
+              Skilled in Python, Java, C, SQL, and web technologies, with hands-on
+              experience in automation, computer vision, and full-stack development projects.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
+            <p className="text-muted-foreground">
+              Strong leadership experience as a project team lead, with focus on teamwork,
+              problem-solving, and delivering projects on time.
+            </p>
+
+            {/* BUTTONS */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+
               <a href="#contact" className="cosmic-button">
-                {" "}
                 Get In Touch
               </a>
 
+              {/* FIXED DOWNLOAD BUTTON */}
               <a
-                href=""
-                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                href="/MyResume.pdf"
+                download="Monika_P_Resume.pdf"
+                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition"
               >
-                Download CV
+                Download Resume
               </a>
+
             </div>
           </div>
 
+          {/* RIGHT SIDE CARDS */}
           <div className="grid grid-cols-1 gap-6">
-            <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-primary" />
-                </div>
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Web Development</h4>
-                  <p className="text-muted-foreground">
-                    Creating responsive websites and web applications with
-                    modern frameworks.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" />
-                </div>
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
-                  <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and seamless user
-                    experiences.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-primary" />
-                </div>
 
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg">Project Management</h4>
-                  <p className="text-muted-foreground">
-                    Leading projects from conception to completion with agile
-                    methodologies.
+            {/* SOFTWARE */}
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex gap-4">
+                <Code className="text-primary" />
+                <div>
+                  <h4 className="font-semibold">Software Development</h4>
+                  <p className="text-muted-foreground text-sm">
+                    Building applications using Python, Java, and web technologies.
                   </p>
                 </div>
               </div>
             </div>
+
+            {/* AI */}
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex gap-4">
+                <User className="text-primary" />
+                <div>
+                  <h4 className="font-semibold">AI & Automation</h4>
+                  <p className="text-muted-foreground text-sm">
+                    Computer vision, automation tools, and intelligent systems.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* DATABASE */}
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex gap-4">
+                <Database className="text-primary" />
+                <div>
+                  <h4 className="font-semibold">SQL & Data Handling</h4>
+                  <p className="text-muted-foreground text-sm">
+                    Experience with SQL & SQLite for data-driven applications.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* LEADERSHIP */}
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex gap-4">
+                <Briefcase className="text-primary" />
+                <div>
+                  <h4 className="font-semibold">IoT & Leadership</h4>
+                  <p className="text-muted-foreground text-sm">
+                    ESP32-based IoT systems and team project leadership experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
